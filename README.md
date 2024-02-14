@@ -3,7 +3,7 @@
 Run the container:
 
 ```bash
-docker run --rm -v "$PWD":/var/opt/texproject -it das-kaesebrot/texbuilder
+docker run --rm -v "$PWD":/var/opt/texproject -it daskaesebrot/texbuilder
 ```
 
 Then execute your commands inside the container.
@@ -21,7 +21,7 @@ variables:
 
 build-latex:
   stage: build
-  image: daskaesebrot/texmaker
+  image: daskaesebrot/texbuilder
   rules:
     - changes:
         - "**/*.tex"
