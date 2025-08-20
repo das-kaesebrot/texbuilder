@@ -1,6 +1,6 @@
 ARG FEATURE_SET=full
 
-FROM debian:12 as base
+FROM debian:13 as base
 
 ARG PROJECT_PATH=/var/opt/texproject
 ARG CONTAINER_USER=texbuilder
