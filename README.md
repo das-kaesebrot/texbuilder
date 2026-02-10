@@ -1,3 +1,7 @@
+> [!WARNING]
+> Even though this project uses `texliveonfly`, builds still occasionally fail and therefore pipelines are not guaranteed to succeed. Feel free to fork this project to try fixing this.
+> In the meantime, I decided to switch to [typst](https://typst.app/docs/) for good.
+
 # Usage
 
 Run the container:
