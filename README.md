@@ -4,10 +4,15 @@
 
 # Usage
 
-Run the container:
+Build the container:
+```bash
+docker build -t my-local-texbuilder:latest .
+```
+
+Then run the container:
 
 ```bash
-docker run --rm -v "$PWD":/var/opt/texproject -it daskaesebrot/texbuilder
+docker run --rm -v "$PWD":/var/opt/texproject -it my-local-texbuilder:latest
 ```
 
 Then execute your commands inside the container.
@@ -25,7 +30,7 @@ variables:
 
 build-latex:
   stage: build
-  image: daskaesebrot/texbuilder
+  image: my-local-texbuilder:latest
   rules:
     - changes:
         - "**/*.tex"
